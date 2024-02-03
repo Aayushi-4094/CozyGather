@@ -53,3 +53,16 @@ struct ThirdScreen: View {
         }
     }
 }
+
+
+
+
+
+
+
+struct ThirdScreen_Previews: PreviewProvider{
+    static var previews: some View{
+        ThirdScreen()
+    }
+}
+

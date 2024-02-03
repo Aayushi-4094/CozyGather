@@ -64,13 +64,9 @@ struct BudgetApp: View {
             // Add the Toolbar at the bottom of the screen
             .overlay(
                 Toolbar()
-                    .frame(maxWidth: .infinity, maxHeight: 90)
                     .background(Color.white)
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-                    .padding()
-                    .ignoresSafeArea(edges: .bottom)
-                , alignment: .bottom
+                    .position(CGPoint(x: 200.0, y: 735.0))
+                    
             )
         }
     }
