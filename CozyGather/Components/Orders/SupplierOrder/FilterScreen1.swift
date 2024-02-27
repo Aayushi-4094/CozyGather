@@ -109,6 +109,31 @@ struct FilterScreen1: View {
     }
 }
 
+struct FilterButton: View {
+    var imageName: String
+    var label: String
+    var isSelected: Bool
+    var action: () -> Void
+    
+    var body: some View {
+        VStack {
+            Image(systemName: imageName)
+                .font(.title)
+                .foregroundColor(isSelected ? .blue : .gray)
+            Text(label)
+                .foregroundColor(isSelected ? .blue : .black)
+        }
+        .padding()
+        .background(isSelected ? Color.blue.opacity(0.2) : Color.clear)
+        .cornerRadius(10)
+        .onTapGesture(perform: action)
+        
+        
+    }
+}
+
+
+
 struct FilterButton1: View {
     var imageName: String
     var label: String
